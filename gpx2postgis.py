@@ -7,7 +7,7 @@
 #              already exist).  Features are append the appropriate table of
 #              the same name as the GPX layer.
 #
-# Author:      rdalton
+# Author:      ryankdalton@gmail.com
 #
 # Created:     13/06/2016
 # Copyright:   None
@@ -18,7 +18,7 @@ from osgeo import ogr
 
 
 #Define the path to files and file format to import
-inFolder = r'D:\path\to\files'
+inFolder = r'D:\path\to\gpx\files'
 inFormat = "gpx"
 
 #Define the GPX feature types to import
@@ -27,7 +27,7 @@ gpxImportLayers = ["waypoints", "routes", "route_points", "tracks", "track_point
 #Define PostGIS connection details
 dbFormat = "PostgreSQL"
 dbHost = "localhost"
-dbName = "postgis"
+dbName = "dbName"
 dbSchema = "gps"
 dbUser = "XXXX"
 dbPWD = "XXXX"
